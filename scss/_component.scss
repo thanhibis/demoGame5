@@ -1,0 +1,96 @@
+@use "vars" as *;
+
+
+.c-fc{ //font-color
+	&--white{
+		color: white !important;
+	}
+	&--black{
+		color: black !important;
+	}
+	&--red{
+		color: #d03712 !important;
+	}
+	&--yellow{
+		color: #ffe180 !important;
+	}
+	&--green{
+		color: #2eff50 !important;
+	}
+}
+
+
+
+
+.c-al{
+	&--c{
+		text-align: center !important;
+	}
+	
+	&--r{
+		text-align: right !important
+	}
+	
+	&--l{
+		text-align: left !important;
+	}
+}
+
+
+
+
+
+
+
+
+/* ====================================================
+Component
+==================================================== */
+// Common Text style
+.c-txt{
+	&__basic{
+
+	}
+}
+
+
+
+
+//ttl
+.c-ttl{
+	&__01{
+		display: block;
+		text-align: center;
+		@include font-size(30);
+		text-transform: uppercase;
+		line-height: 1.3;
+		font-weight: 900;
+		>span{
+			display: inline-block;
+			position: relative;
+			padding: 0 130px;
+			&:before,&:after{
+				content: "";
+				width: 104px;
+				height: 20px;
+				position: absolute;
+				@include v-align;
+			}
+			&:before{
+				background: url("../img/bf.png")no-repeat;
+				background-size: 100%;
+				left: 0;
+			}
+			&:after{
+				background: url("../img/af.png")no-repeat;
+				background-size: 100%;
+				right: 0;
+			}
+		}
+	}
+}
+
+
+
+
+

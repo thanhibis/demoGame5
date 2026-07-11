@@ -2507,7 +2507,7 @@ Component
   .float-left {
     position: absolute;
     bottom: 41.6666666667vw;
-    left: 2.8645833333vw;
+    left: 0;
     right: 0;
     display: flex;
     justify-content: center;

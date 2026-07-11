@@ -13,6 +13,12 @@
 	}
 }
 
+main{
+	@include mq(){
+		padding-top: vwsp(100);
+	}
+}
+
 .btn-img{
 	display: block;
 	position: relative;

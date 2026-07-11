@@ -11,7 +11,7 @@
 		position: fixed;
 		background: #35443f;
 		padding: vwsp(20) 0 vwsp(20) 2%;
-
+		@include flex(end,center,wrap);
 	}
 	.header-logo{
 		display: block;
@@ -61,9 +61,11 @@
 				margin-bottom: 30px;
 			}
 			&-item{
-				border-right: 1px solid #ffd496;
-				&:last-child{
-					border-right: none;
+				@include mq(md-min){
+					border-right: 1px solid #ffd496;
+					&:last-child{
+						border-right: none;
+					}
 				}
 				@include mq(){
 					margin-bottom: 3vw;
@@ -415,18 +417,35 @@
 	}
 }
 .float-left{
-	width: vw(170);
-	position: fixed;
-	@include v-align;
-	left: 10px;
 	z-index: 99;
+	@include mq(md-min){
+		width: vw(170);
+		position: fixed;
+		@include v-align;
+		left: 10px;
+	}
+	@include mq(){
+		position: absolute;
+		bottom: vwsp(320);
+		left: 0;
+		right: 0;
+		@include flex(center,center,wrap);
+	}
 	li{
-		margin-bottom: vw(5);
-		&:last-child{
-			margin-bottom: 0;
+		@include mq(md-min){
+			margin-bottom: vw(5);
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+		@include mq(){
+			width: 25%;
 		}
 		a{
 			display: block;
+			img{
+				width: 100%;
+			}
 		}
 	}
 }

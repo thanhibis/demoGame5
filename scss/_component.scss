@@ -91,6 +91,22 @@ Component
 }
 
 
-
+.c-btn__01{
+	width: 100%;
+	@include flex(center,center,wrap);
+	text-align: center;
+	height: 60px;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	background: #4ab176;
+	color: white;
+	@include font-size(30);
+	cursor: pointer;
+	@include mq(){
+		height: vwsp(70);
+		font-size: vwsp(30);
+	}
+}
 
 

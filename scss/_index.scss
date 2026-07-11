@@ -522,6 +522,9 @@
 		top: vw(147);
 		right: vw(110);
 		z-index: 2;
+		.slimScrollDiv{
+			height: 18.708333vw !important;
+		}
 	}
 	&__bottom{
 		position: absolute;
@@ -584,11 +587,12 @@
 	&__note{
 		font-size: vw(15);
 		line-height: 1.4;
-		height: vw(400);
-		overflow-y: scroll;
-		overflow-x: hidden;
+		height: vw(400) !important;
 		padding-right: vw(15);
 		text-align: justify;
+		.slimScrollBar{
+			height: vw(400) !important;
+		}
 		&-ttl{
 			display: block;
 			text-align: center;

@@ -49,3 +49,35 @@ jQuery(document).ready(function ($) {
     return false;
   });
 });
+$(function () {
+  $('.js-bar').slimScroll();
+});
+$('.js-popup-01').on('click', function (e) {
+  e.preventDefault();
+  $("#popup-01").addClass("active");
+  $("html").addClass("js-locked");
+});
+$('.js-popup-02').on('click', function (e) {
+  e.preventDefault();
+  $("#popup-02").addClass("active");
+  $("html").addClass("js-locked");
+});
+$('.js-popup-03').on('click', function (e) {
+  e.preventDefault();
+  $("#popup-03").addClass("active");
+  $("html").addClass("js-locked");
+});
+$('.js-popup-04').on('click', function (e) {
+  e.preventDefault();
+  $("#popup-04").addClass("active");
+  $("html").addClass("js-locked");
+});
+$('.js-popup-05').on('click', function (e) {
+  e.preventDefault();
+  $("#popup-05").addClass("active");
+  $("html").addClass("js-locked");
+});
+$('.popup-show__close').on('click', function () {
+  $(".popup").removeClass("active");
+  $("html").removeClass("js-locked");
+});

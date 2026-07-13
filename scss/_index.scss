@@ -306,6 +306,7 @@
 	min-height: 130vh;
 	@include mq(){
 		padding: vwsp(70) 0;
+		min-height: vwsp(1330);
 	}
 	&:before{
 		content: "";
@@ -591,7 +592,7 @@
 		padding-right: vw(15);
 		text-align: justify;
 		.slimScrollBar{
-			height: vw(400) !important;
+			height: vw(200) !important;
 		}
 		&-ttl{
 			display: block;
@@ -620,6 +621,9 @@
 					right: 0;
 				}
 			}
+		}
+		.js-bar{
+			padding-bottom: vw(100);
 		}
 	}
 }

@@ -3167,6 +3167,7 @@ select.form-control {
 @media screen and (max-width: 768px) {
   .sec-user {
     padding: 9.1145833333vw 0;
+    min-height: 173.1770833333vw;
   }
 }
 .sec-user:before {
@@ -3507,7 +3508,7 @@ select.form-control {
   text-align: justify;
 }
 .number-block__note .slimScrollBar {
-  height: 20.8333333333vw !important;
+  height: 10.4166666667vw !important;
 }
 .number-block__note-ttl {
   display: block;
@@ -3537,6 +3538,9 @@ select.form-control {
 }
 .number-block__note-ttl span:after {
   right: 0;
+}
+.number-block__note .js-bar {
+  padding-bottom: 5.2083333333vw;
 }
 
 @media screen and (max-width: 768px) {

@@ -3541,6 +3541,7 @@ select.form-control {
 }
 .number-block__note .js-bar {
   padding-bottom: 5.2083333333vw;
+  padding-right: 1.3020833333vw !important;
 }
 
 @media screen and (max-width: 768px) {

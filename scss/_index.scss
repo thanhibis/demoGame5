@@ -1,7 +1,8 @@
 @use "vars" as *;
 
 .mv-video{
-	img{
+
+	img,video{
 		width: 100%;
 	}
 }
@@ -21,6 +22,7 @@
 
 .sec-gif{
 	padding: vw(30) 0 vw(60);
+	margin-top: -50px;
 	@include mq(){
 		padding: vwsp(160) 0 vwsp(50);
 		margin: vwsp(-300) 0 0;
@@ -126,23 +128,26 @@
 			@include mq(){
 				top: 0;
 			}
-			>img{
+			>img,video{
 				width: 100%;
 			}
+
 		}
 		&-01{
-			width: vw(550);
+			width: vw(678);
 			position: absolute;
-			top: 0;
+			top: vw(-100);
 			left: 0;
 			right: 0;
 			margin: 0 auto;
 			z-index: 1;
 			@include mq(){
 				position: relative;
+				top: auto;
 				width: 76%;
 				order: 1;
-				margin-bottom: vwsp(-204);
+				margin-top: vwsp(-75);
+				margin-bottom: vwsp(-50);
 			}
 			.gif-block__show-name{
 				top: vw(75);
@@ -172,6 +177,9 @@
 						width: vwsp(730);
 					}
 				}
+			}
+			video{
+				width: 100%;
 			}
 		}
 		&-02{

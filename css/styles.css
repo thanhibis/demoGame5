@@ -1199,6 +1199,7 @@ body {
   font-size: 100%;
   -webkit-font-smoothing: antialiased;
   line-height: 1.4;
+  overflow-x: hidden;
 }
 
 a {
@@ -1401,12 +1402,6 @@ Component
 @media screen and (max-width: 768px) {
   .inner {
     padding: 0 3.90625vw;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  main {
-    padding-top: 13.0208333333vw;
   }
 }
 
@@ -2767,7 +2762,7 @@ select.form-control {
 @media screen and (max-width: 768px) {
   .float-left {
     position: absolute;
-    bottom: 41.6666666667vw;
+    bottom: 33.203125vw;
     left: 0;
     right: 0;
     display: flex;
@@ -2804,7 +2799,7 @@ select.form-control {
   -webkit-overflow-scrolling: auto;
 }
 
-.mv-video img {
+.mv-video img, .mv-video video {
   width: 100%;
 }
 
@@ -2826,6 +2821,7 @@ select.form-control {
 
 .sec-gif {
   padding: 1.5625vw 0 3.125vw;
+  margin-top: -50px;
 }
 @media screen and (max-width: 768px) {
   .sec-gif {
@@ -2959,13 +2955,13 @@ select.form-control {
     top: 0;
   }
 }
-.gif-block__show-item > img {
+.gif-block__show-item > img, .gif-block__show-item video {
   width: 100%;
 }
 .gif-block__show-01 {
-  width: 28.6458333333vw;
+  width: 35.3125vw;
   position: absolute;
-  top: 0;
+  top: -5.2083333333vw;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -2974,9 +2970,11 @@ select.form-control {
 @media screen and (max-width: 768px) {
   .gif-block__show-01 {
     position: relative;
+    top: auto;
     width: 76%;
     order: 1;
-    margin-bottom: -26.5625vw;
+    margin-top: -9.765625vw;
+    margin-bottom: -6.5104166667vw;
   }
 }
 .gif-block__show-01 .gif-block__show-name {
@@ -3013,6 +3011,9 @@ select.form-control {
   .gif-block__show-01 .gif-block__show-img img {
     width: 95.0520833333vw;
   }
+}
+.gif-block__show-01 video {
+  width: 100%;
 }
 @media screen and (max-width: 768px) {
   .gif-block__show-02 {

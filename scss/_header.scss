@@ -426,7 +426,7 @@
 	}
 	@include mq(){
 		position: absolute;
-		bottom: vwsp(320);
+		bottom: vwsp(255);
 		left: 0;
 		right: 0;
 		@include flex(center,center,wrap);
